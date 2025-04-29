@@ -1,43 +1,56 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>App | Inicia Sesion</title>
-  <link href="./output.css" rel="stylesheet">
-  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./output.css" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>App</title>
 </head>
 
-<body class="h-screen bg-gradient-to-r from-indigo-300 to-purple-400 flex justify-center items-center">
-  <article class="bg-white rounded-3xl shadow-xl/30 grid grid-cols-2 overflow-hidden">
-    <div class="bg-[url('/public/src/img/login.jpg')] bg-cover bg-center h-full flex justify-center items-center p-20">
-      <h2 class="font-serif text-3xl text-white">Bienvenido de nuevo</h2>
+<body class="h-screen p-0 m-0">
+
+    <div class="relative w-full h-full">
+        <img class="absolute w-full h-full object-cover" src="./img/bg-index.jpg" alt="">
+        <div class="absolute inset-0 bg-black opacity-70"></div>
+
+        <div class="text-[20px] relative flex flex-col items-center justify-center p-10 text-white font-serif">
+            <img class="w-[100px]" src="./img/logo.png" alt="Logo">
+        </div>
+        <article
+            class="relative bg-white rounded-3xl shadow-xl/30 grid grid-cols-2 overflow-hidden max-w-4xl mx-auto mt-10">
+            <div
+                class="bg-[url('/public/src/img/login.jpg')] bg-cover bg-center h-full flex justify-center items-center p-20">
+                <h2 class="font-serif text-3xl text-white">Bienvenido de nuevo</h2>
+            </div>
+            <div class="p-10">
+                <form class="flex flex-col items-center gap-4">
+
+                    <h2 class="text-2xl font-bold">Login</h2>
+
+                    <p>Inicia sesion con tu cuenta</p>
+
+                    <div class="relative border-b-2 border-black pb-1 mb-2">
+                        <input class="outline-none" name="Usuario" type="text" id="usuario" placeholder="Usuario"
+                            required>
+                        <i class='bx bxs-user'></i>
+                    </div>
+                    <div class="relative border-b-2 border-black pb-1">
+                        <input class="outline-none" type="password" id="contraseña" placeholder="Contraseña" required>
+                        <i class='bx bxs-lock-alt'></i>
+                    </div>
+                    <button
+                        class="bg-blue-500 rounded-sm border-none hover:rounded-2xl text-white m-2 cursor-pointer hover:bg-lime-600 p-3 mt-4"
+                        type="submit">Iniciar sesion</button>
+                    <div class="text-[14px] text-blue-600 underline">
+                        <a href="#">Olvidaste tu contraseña?</a>
+                    </div>
+                </form>
+            </div>
+        </article>
+
     </div>
-    <div class="p-10">
-      <form class="flex flex-col items-center gap-4">
-
-        <h2 class="text-2xl font-bold">Login</h2>
-
-        <p>Inicia sesion con tu cuenta</p>
-
-        <div class="relative border-b-2 border-black pb-1 mb-2">
-          <input class="outline-none" name="Usuario" type="text" id="usuario" placeholder="Usuario">
-          <i class='bx bxs-user'></i>
-        </div>
-        <div class="relative border-b-2 border-black pb-1">
-          <input class="outline-none" type="password" id="contraseña" placeholder="Contraseña">
-          <i class='bx bxs-lock-alt'></i>
-        </div>
-        <button
-          class="bg-blue-500 rounded-sm border-none hover:rounded-2xl text-white m-2 cursor-pointer hover:bg-lime-600 p-3 mt-4"
-          type="submit">Iniciar sesion</button>
-        <div class="text-[14px] text-blue-600 underline">
-          <a href="#">Olvidaste tu contraseña?</a>
-        </div>
-      </form>
-    </div>
-  </article>
 </body>
 
 </html>

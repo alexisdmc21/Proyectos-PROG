@@ -1,16 +1,63 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./output.css" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>App</title>
 </head>
 
-<body>
-    <h1 class="text-3xl font-bold underline">
-        Creando mi proyecto
-    </h1>
+<body class="h-screen p-0 m-0">
+
+    <div class="relative w-full h-full">
+        <img class="absolute w-full h-full object-cover" src="./img/bg-index.jpg" alt="">
+        <div class="absolute inset-0 bg-black opacity-70"></div>
+
+        <div class="text-[20px] relative flex flex-col items-center justify-center p-10 text-white font-serif">
+            <img src="./img/logo.png" alt="Logo">
+
+            <ul class="flex gap-15 pt-7">
+                <li class="hover:border-b-4 border-red-700">
+                    <a href="login.html">Iniciar sesion</a>
+                    <i class='bx bx-log-in'></i>
+                </li>
+                <li class="hover:border-b-4 border-red-700">
+                    <a href="registro.html">Registrarse</a>
+                    <i class='bx bxs-user-plus'></i>
+                </li>
+                <li class="hover:border-b-4 border-red-700">
+                    <a href="perfil.html">Mi perfil</a>
+                    <i class='bx bxs-user'></i>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/profile.php?id=100024573617273">
+                        <i class='bx bxl-facebook'></i>
+                    </a>
+                    <a href="https://www.instagram.com/alexz_dmc21?igsh=MXVpaTJvMHhkems3dw==">
+                        <i class='bx bxl-instagram'></i>
+                    </a>
+                    <a href="https://wa.me/+593980981027">
+                        <i class='bx bxl-whatsapp'></i>
+                    </a>
+                </li>
+            </ul>
+            <div class="pt-30 pb-10 text-4xl">
+                <h1>MI PAGINA WEB</h1>
+            </div>
+            <ul class="flex font-bold text-red-600 pb-6">
+                <li>Estudiante |</li>
+                <li>Carrera ITIN |</li>
+                <li>NIVEL 6 |</li>
+            </ul>
+
+            <p class="text-[15px] font-sans text-red-500">
+                "CADA LÍNEA DE CÓDIGO QUE ESCRIBIMOS NO SOLO CONSTRUYE UNA PÁGINA, SINO TAMBIÉN LA PUERTA DE ENTRADA A
+                NUEVAS OPORTUNIDADES."
+            </p>
+        </div>
+    </div>
 </body>
 
 </html>
