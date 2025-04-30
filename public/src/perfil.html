@@ -4,49 +4,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mis datos</title>
-    <link rel="stylesheet" href="styles/estilo-datos.css"><!--Carga los estilos desde la carpeta styles-->
+    <link href="./output.css" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>App | Mi perfil</title>
 </head>
 
-<body>
+<body class="h-screen p-0 m-0">
 
-    <!--CABECERA CON UN IDENTIFICATIVO DE "MIS DATOS PERSONALES Y UNA OPCION PARA VOLVER A LA PAGINA 
-        PRINCIPAL AL IGUAL QUE LA PAGINA INDEX"-->
-    <header class="cabecera">
-        <hr>
-        <nav>
-            <div class="logo">
+    <div class="relative h-screen">
+        <img class="absolute w-full h-full object-cover" src="./img/bg-index.jpg" alt="">
+        <div class="absolute inset-0 bg-black opacity-70"></div>
 
-                <img src="imagenes/espe-logo.png" alt="logo-espe">
-
-                <h1>MIS DATOS PERSONALES</h1>
-            </div>
-            <ul>
-                <li><a href="index.html">Volver</a></li>
-            </ul>
-        </nav>
-        <hr>
-    </header>
-
-    <!--CONTENEDOR EN EL QUE IRA LOS DATOS PERSONALES-->
-    <div class="mi-info">
-
-        <!--UBICACION DE LOS DATOS PERSONALES-->
-        <div class="info">
-            <img src="imagenes/foto1.jpg" alt="Alexis Morales"> <!--CARGA DE MI FOTO PERSONAL-->
-
-            <!--MIS DATOS-->
-            <h4>Nombre completo: </h4>
-            <p>Alexis Damian Morales Cuásquer</p>
-            <h4>Correo institucional: </h4>
-            <p>admorales7@espe.edu.ec</p>
-            <h4>NRC: </h4>
-            <p>1382</p>
-            <br>
-            <h4>Período: </h4>
-            <p>OCT24 - MARZ 25</p>
+        <div class="text-[20px] relative flex items-center justify-center pt-10 text-white font-serif">
+            <img class="w-[100px]" src="./img/logo.png" alt="Logo">
+            <img class="w-[150px]" src="./img/logo_espe.png" alt="Logo-espe">
         </div>
-    </div>
+        <div>
+            <section class="flex justify-center pt-8 font-bold font-serif">
+                <div
+                    class="flex flex-col relative bg-white w-130 h-70 items-center rounded-2xl shadow-xl/30 overflow-hidden p-4 text-shadow-lg/30">
+                    <h1>MI PERFIL</h1>
+                    <img class="w-15 rounded-2xl" src="./img/perfil.jpg" alt="">
+                    <h2>Nombre completo: Alexis Damian Morales Cuásquer</h2>
+                    <h2>Correo institucional: admorales7@espe.edu.ec</h2>
+                    <h2>NRC: </h2>
+                    <h2>Período: </h2>
+                    <p>COT</p>
+                </div>
+            </section>
+        </div>
 </body>
 
 </html>
