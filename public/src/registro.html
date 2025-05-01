@@ -13,25 +13,25 @@
     <article class="bg-white rounded-3xl shadow-xl/30 grid grid-cols-2 overflow-hidden">
 
         <div class="p-10">
-            <form class="flex-col items-center">
+            <form id="formulario" class="flex-col items-center">
 
                 <h2 class="text-2xl font-bold text-center mb-4">REGISTRATE</h2>
 
                 <div class="border-b-2 border-black pb-1 my-7">
-                    <input class="outline-none" name="Nombre" type="text" placeholder="Nombre" required>
+                    <input class="outline-none" name="Nombre" id="nombre" type="text" placeholder="Nombre">
                 </div>
                 <div class="border-b-2 border-black pb-1 my-7">
-                    <input class="outline-none" name="Nombre" type="text" placeholder="Apellido" required>
+                    <input class="outline-none" name="Nombre" id="apellido" type="text" placeholder="Apellido">
                 </div>
                 <div class="border-b-2 border-black pb-1 my-7">
-                    <input class="outline-none" name="Usuario" type="text" placeholder="Usuario" required>
+                    <input class="outline-none" name="Usuario" id="usuario" type="text" placeholder="Usuario">
                 </div>
                 <div class="border-b-2 border-black pb-1">
-                    <input class="outline-none" type="password" placeholder="Contraseña" required>
+                    <input class="outline-none" id="contrasena" type="password" placeholder="Contraseña">
                 </div>
                 <button
                     class="bg-blue-500 rounded-sm border-none hover:rounded-2xl text-white m-2 cursor-pointer hover:bg-lime-600 p-3 mt-4"
-                    type="submit">Registrarme</button>
+                    type="submit" id="btnRegistrar">Registrarme</button>
                 <div class="text-[14px] text-blue-600">
                     <ul class="flex gap-1">
                         <li class="text-black">Ya tienes una cuenta?</li>
@@ -47,6 +47,7 @@
             <h2 class="font-serif text-3xl text-white">Crea tu usuario!!</h2>
         </div>
     </article>
+    <script src="./app.js"></script>
 </body>
 
 </html>
